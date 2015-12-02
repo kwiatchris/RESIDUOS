@@ -18,6 +18,9 @@ $app->post('/hello2/:name', function ($name) use ($app) {
        //$data = array('name' => $name, 'surname' => 'Abizen');
      header('Content-Type: application/json');
 	 echo json_encode($name);
+     header("Location: /home/zubiri/Escritorio/Aitor/Residuos/RESIDUOS/CONTROLL/guardar.php");
+     $control=new Controller(); // /home/zubiri/Escritorio/Aitor/Residuos/RESIDUOS/CONTROLL/
+     $control->guardar($name);
 	 // $json = $app->request->getBody();
 	  //$data2 = json_decode($json, true);
 	//echo json_encode($data2);
