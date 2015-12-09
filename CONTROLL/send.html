@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  img {
+    height: 100px;
+    float: left;
+  }
+  </style>
+  <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+</head>
+<body>
+<script>
+$.ajax({
+    type: "GET",
+    url: "http://http://localhost/Aitor/classes/RESIDUOS/index.php/dato",
+    //dataType: "json",
+    data:  'name='+ 'chris'},
+    success: function(data)          //on recieve of reply
+      { alert("hecho");
+       
+      },
+    error: function (xhr, ajaxOptions, thrownError) {
+      alert(xhr.status);
+      alert(thrownError);
+    }
+});
+
+
+</script>
+ 
+</body>
+</html>
